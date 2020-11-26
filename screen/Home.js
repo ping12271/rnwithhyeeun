@@ -1,15 +1,19 @@
 import React from 'react';
-import { View, Text, Button }  from 'react-native';
-
+import { View, Text, TouchableOpacity }  from 'react-native';
 
 const home = ({navigation}) => {
     return (
         <View>
             <Text>안녕하세요</Text>
-            <Button 
+            <TouchableOpacity
                 onPress={() => navigation.navigate('Detail')}
-                title="Go to Detail"
-            />
+            >
+                <Text>
+                    Go to Detail
+                </Text>
+            </TouchableOpacity>
+            
+                
         </View>
     );
 };
